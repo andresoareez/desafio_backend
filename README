@@ -1,0 +1,31 @@
+## SOBRE O PROJETO 
+-- Utilizei a API em flask por ser simples porem em um caso mais robusto com mais dados em movimentacão utilizaria o Django com a modelagem MVC porem nesse caso optei por utilizar o flask
+-- MONGODB: Como nao foi especificado se o banco de dados precisaria ser local ou nao, fiz a opção de utilizar o banco na cloud para evitar problemas internos de versoes que pudessem fazer o app não rodar
+-- Para execucao da aplicacao de forma mais facil e rapida criei scripts para windows e mac
+-- TESTE: Para testar os endpoints criei uma collection no postman que pode ser facilmente executada após rodar a aplicação 
+
+## RODANDO A APLICACAO 
+
+Apos o clone desse repositorio rode no seu path a opcao mais de acordo com sua OS
+
+-- MAC OS 
+- Para rodar a aplicacao localmente voce precisa utilizar de dois scripts 
+run_venv.sh 
+e run_api.sh 
+
+utilize nessa sequencia para primeiro criar o environment, instalar os requirements e apos isso rodar a api. 
+
+-- WINDOWS 
+- Para rodar a aplicacao localmente voce precisa utilizar de dois scripts
+run_venv.bat
+run_api.bat 
+
+utilize nessa sequencia para primeiro criar o environment, instalar os requirements e apois isso rodar a api. 
+
+-- DOCKER
+
+Para levantar essa aplicacao num container docker pode ser utilizado os scripts determinador para cada OS 
+ou se preferir abra seu terminal e utilize os comandos: 
+
+docker-compose build
+docker-compose run 
