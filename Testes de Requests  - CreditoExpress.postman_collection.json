@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "e2b3f7ef-eeb1-4e9a-abc8-5a49c9a945e4",
+		"name": "Testes de Requests  - CreditoExpress",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Entrada de Dados CPF e CELULAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": \"11111111111\",\n    \"celular\": \"81993583437\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simulando emprestimo com valor e parcelas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"valor\": 1000,\n    \"parcelas\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5000/calculadora",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5000",
+					"path": [
+						"calculadora"
+					]
+				},
+				"description": "Essa request simula o emprestimo passando valor e numero de parcelas"
+			},
+			"response": []
+		}
+	]
+}
