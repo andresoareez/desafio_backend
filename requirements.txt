@@ -4,14 +4,10 @@ certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
 distro==1.5.0
-dnspython==2.1.0
-docker==4.4.1
-docker-compose==1.28.2
+dnspython==1.16.0
 dockerpty==0.4.1
 docopt==0.6.2
 Flask==1.1.2
-gitdb==4.0.5
-GitPython==3.1.12
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.3
@@ -26,6 +22,5 @@ six==1.15.0
 smmap==3.0.5
 texttable==1.6.3
 urllib3==1.26.3
-validate-docbr==1.8.2
 websocket-client==0.57.0
 Werkzeug==1.0.1

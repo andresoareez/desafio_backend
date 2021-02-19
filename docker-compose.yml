@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+    api:
+        build:
+            dockerfile: ./API.dockerfile
+            context: .
+        image: andresoares/apiteste
+        container_name: apiteste
+        ports:
+        -   5000:5000
+        volumes:
+        - ./:/app
+        working_dir: /app
+        environment:
+          - FLASK_APP=app.py
+        command: flask run --host=0.0.0.0
